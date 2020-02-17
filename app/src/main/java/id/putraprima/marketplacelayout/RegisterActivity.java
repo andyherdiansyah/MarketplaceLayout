@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
     }
     public void next (View view){
-        Intent iten = new Intent(MainActivity.this,LoginActivity.class);
+        Intent iten = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(iten);
     }
 }
